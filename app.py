@@ -7,7 +7,9 @@ from flask import Flask, render_template, request, session,redirect
 
 from Student import Student
 
-
+import os
+...
+port = int(os.environ.get('PORT', 5000))
 #########################################################
 class Scrape(object):
     def __init__(self):
@@ -125,7 +127,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False)
+    app.run(host='0.0.0.0', port=port, debug=True)
     '''while True:
         print('******************************')
         username = input('username: ')
