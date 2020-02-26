@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+	
+    <form action="{{url_for('predict')}}" method="post">
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+        <input type="text" class="form-control" name="name" placeholder="username" required="required" />
+    </div></div>
+    <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+      <input type="text" class="form-control" name="password" placeholder="password" required="required" />
+      <button type="submit" value="submit" class="btn submit_btn">login</button>
+    </form>
+    </div></div>
+    <br>
+    <br>
+    {{stud_name}}
+    {{b_o_a}}
+    {{percent}}
+</head>
