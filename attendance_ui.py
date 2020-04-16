@@ -39,6 +39,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         self.count=False
         fnt = QtGui.QFont('Arial', 19)
+        fnt1 = QtGui.QFont('Arial', 14)
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -64,6 +65,7 @@ class Ui_MainWindow(object):
         self.pushButton.setGeometry(QtCore.QRect(300, 490, 181, 61))
         self.pushButton.setObjectName("pushButton")
         self.pushButton.setStyleSheet("border-radius:15px;")
+        self.pushButton.setFont(fnt1)
         self.photo = QtWidgets.QLabel(self.centralwidget)
         self.photo.setGeometry(QtCore.QRect(330, 60, 101, 81))
         self.photo.setObjectName("photo")
